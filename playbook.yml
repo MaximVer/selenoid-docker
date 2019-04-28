@@ -1,0 +1,8 @@
+---
+- hosts: maxver_gcp_selenoid-vm-3
+  become: yes
+  remote_user: root
+  roles:
+    - geerlingguy.docker
+    - robertdebock.python_pip
+    - { role: ../selenoid-docker }

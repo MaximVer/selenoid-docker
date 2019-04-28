@@ -12,9 +12,9 @@ Set up [selenoid](https://github.com/aerokube/selenoid) in docker
 #### Variables
 
 ```yaml
-selenoid_version: 1.6.0
-selenoid_cm_version: 1.4.2
-selenoid_limit: 5
+selenoid_version: 1.9.0
+selenoid_cm_version: 1.5.7
+selenoid_limit: 3
 selenoid_tmpfs: 128
 selenoid_config_dir: /etc/selenoid
 selenoid_listen_port: 4444
@@ -29,6 +29,10 @@ selenoid_video_container_output_dir: /opt/selenoid/video
 ```
 
 #### Example
+
+##### How to run
+`ansible-playbook -vv -i ./hosts.ini --become playbook.yml`
+
 
 ```yaml
 ---
