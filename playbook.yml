@@ -1,5 +1,7 @@
 ---
-- hosts: maxver_gcp_selenoid-vm-3
+- hosts:
+    - asanova_gcp_selenoid-vm-1
+    - asanova_gcp_selenoid-vm-2
   become: yes
   remote_user: root
   roles:
